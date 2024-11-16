@@ -11,20 +11,20 @@
 #define i2c_Address 0x3c
 
 
-const int LINMOT_STEPPERS_STEP_PIN = 19;  // LINMOT: Linear motion
-const int LINMOT_STEPPERS_DIR_PIN = 18;
+const int LINMOT_STEPPERS_STEP_PIN = 13;  // LINMOT: Linear motion
+const int LINMOT_STEPPERS_DIR_PIN = A0;
 
-const int EXTRUDER_STEPPER_STEP_PIN = 16;  // The stepper that moves the wire in the extruder.
-const int EXTRUDER_STEPPER_DIR_PIN = 17;
+const int EXTRUDER_STEPPER_STEP_PIN = 7;  // The stepper that moves the wire in the extruder.
+const int EXTRUDER_STEPPER_DIR_PIN = 6;
 
-const int ENCODER_DT_PIN = 0;
-const int ENCODER_CLK_PIN = 23;
+const int ENCODER_DT_PIN = 3;
+const int ENCODER_CLK_PIN = 2;
 const int ENCODER_BTN_PIN = 4;
 
 // For calibration only. The two buttons are used to move the top blade up and down manually.
 // Once calibrated, you can remove the buttons from the circuit.
-const int BTN1_PIN = 27;
-const int BTN2_PIN = 26;
+const int BTN1_PIN = 12;
+const int BTN2_PIN = 5;
 
 const int LINMOT_STEPPERS_STEPS = 1;  // Steppers step(s) movement at a time.
 const int EXTRUDER_STEPPER_STEPS = 1;
